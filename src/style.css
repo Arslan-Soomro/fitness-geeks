@@ -6,30 +6,30 @@
 @layer base{
     @font-face {
         font-family: 'Dela Gothic One';
-        src: url('fonts/DelaGothicOne.ttf');
+        src: url('Resources/fonts/DelaGothicOne.ttf');
     }
 
     @font-face {
         font-family: 'Poppins';
-        src: url('fonts/Poppins-Regular.ttf');
+        src: url('Resources/fonts/Poppins-Regular.ttf');
         font-weight: 400;
     }
 
     @font-face {
         font-family: 'Poppins';
-        src: url('fonts/Poppins-Bold.ttf');
+        src: url('Resources/fonts/Poppins-Bold.ttf');
         font-weight: 700;
     }
 
     @font-face {
         font-family: 'Montserrat';
-        src: url('fonts/Montserrat-Regular.ttf');
+        src: url('Resources/fonts/Montserrat-Regular.ttf');
         font-weight: 400;
     }
 
     @font-face {
         font-family: 'Montserrat';
-        src: url('fonts/Montserrat-Bold.ttf');
+        src: url('Resources/fonts/Montserrat-Bold.ttf');
         font-weight: 700;
     }
 }
