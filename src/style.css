@@ -2,4 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base{
+    @font-face {
+        font-family: 'Dela Gothic One';
+        src: url('fonts/DelaGothicOne.ttf');
+    }
+
+    @font-face {
+        font-family: 'Poppins';
+        src: url('fonts/Poppins-Regular.ttf');
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: 'Poppins';
+        src: url('fonts/Poppins-Bold.ttf');
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('fonts/Montserrat-Regular.ttf');
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('fonts/Montserrat-Bold.ttf');
+        font-weight: 700;
+    }
+}
+
+
+/*
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+*/
