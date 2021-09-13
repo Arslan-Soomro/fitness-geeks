@@ -7,7 +7,44 @@
     <link rel="stylesheet" href="style.css">
     <title>Fitness Geeks</title>
 </head>
-<body>
 
+<!--
+sm -- 640px minimum-width.
+md -- 768px minimum-width.
+lg -- 1024px minimum-width.
+xl -- 1280px minimum-width.
+2xl-- 1536px minimum-width.
+-->
+
+<body class="bg-cu-white">
+    <!-- Hero Section -->
+    <section class="container mx-auto h-screen bg-cu-black relative p-6">
+        <!-- Logo -->
+        <h1 class="text-cu-blue font-poppins font-bold text-3xl absolute">FG</h1>
+        <!-- The Hero Image-->
+        <div class="w-full h-full flex justify-center items-center">
+            <div class="w-max font-poppins font-bold relative select-none">
+                <div class="absolute sm:left-1/3 left-1/4 sm:w-2/4 w-4/5 -top-full z-10">
+                    <img class="w-full h-auto" src="Resources/images/hero-img.png">
+                </div>
+                <h1 class=" text-6xl sm:text-7xl lg:text-8xl z-0 relative sm:text-left text-center bg-clip-text text-transparent bg-gradient-to-r from-cu-green to-cu-blue">Fitness</h1>
+                <h1 class=" text-6xl sm:text-7xl lg:text-8xl z-20 relative sm:text-right text-center bg-clip-text text-transparent bg-gradient-to-r from-cu-blue to-cu-green"><span class="hidden sm:invisible sm:inline">Fitness</span>Geeks</h1>
+            </div>
+        </div>
+        <!--Bottom Text-->
+        <div class="absolute bottom-10 w-full left-0 text-lg font-poppins leading-loose text-center px-4 sm:flex sm:leading-normal sm:text-left sm:items-center sm:justify-between sm:px-8 md:bottom-6">
+            <div>
+                <p class="text-cu-white">Workout the way one should workout</p>
+                <!--<a class="text-cu-green">Read More</a>-->
+                <a class="text-cu-green cursor-pointer">Read More</a>
+            </div>
+            <a class="text-cu-blue cursor-pointer">Go Premium</a>
+        </div>
+    </section>
+
+    <!--Features Section-->
+    <section class="container">
+        <h1>Why Choose Us</h1>
+    </section>
 </body>
 </html>
