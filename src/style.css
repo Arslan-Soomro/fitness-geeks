@@ -34,6 +34,23 @@
     }
 }
 
+@layer utilities{
+    .feature-card{
+        @apply p-1 xs:p-3 md:p-5 md:max-w-sm;
+    }
+
+    .feature-card img{
+        @apply w-10 md:w-14 h-auto mx-auto md:m-0;
+    }
+
+    .feature-card h3{
+        @apply font-bold my-2 text-base text-center md:text-left sm:text-lg md:text-xl;
+    }
+
+    .feature-card p{
+        @apply text-xs text-center sm:text-sm md:text-base md:text-left;
+    }
+}
 
 /*
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
