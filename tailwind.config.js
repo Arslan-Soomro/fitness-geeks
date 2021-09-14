@@ -5,8 +5,8 @@ module.exports = {
     screens: {
       //That shorthand version of adding a small breakpoint produces an error
 
-      'xs': '450px',
-      // => @media (min-width: 450px) { ... }
+      'xs': '475px',
+      // => @media (min-width: 475px) { ... }
 
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
