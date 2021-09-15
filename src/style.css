@@ -32,23 +32,51 @@
         src: url('Resources/fonts/Montserrat-Bold.ttf');
         font-weight: 700;
     }
+
+    input:focus-within{
+        outline: none;
+    }
+
+    button:focus-visible{
+        outline: none;
+    }
+
+    textarea:focus-visible{
+        outline: none;
+    }
 }
 
 @layer utilities{
-    .feature-card{
+    .feature_card{
         @apply p-1 xs:p-3 md:p-5 md:max-w-sm;
     }
 
-    .feature-card img{
+    .feature_card img{
         @apply w-10 md:w-14 h-auto mx-auto md:m-0;
     }
 
-    .feature-card h3{
+    .feature_card h3{
         @apply font-bold my-2 text-base text-center md:text-left sm:text-lg md:text-xl;
     }
 
-    .feature-card p{
+    .feature_card p{
         @apply text-xs text-center sm:text-sm md:text-base md:text-left;
+    }
+
+    .price_card{
+        @apply p-2 sm:p-4 flex flex-col items-center justify-center md:rounded;
+    }
+
+    .price_card p{
+        @apply text-xs xs:text-sm md:text-base sm:my-2 md:my-4 lg:text-lg;
+    }
+
+    .blue_green_grad{
+        @apply from-cu-blue to-cu-green bg-gradient-to-br;
+    }
+
+    .round_btn{
+        @apply py-1 px-6 rounded-full mt-3 text-xs xs:text-sm sm:text-base md:text-lg;
     }
 }
 
