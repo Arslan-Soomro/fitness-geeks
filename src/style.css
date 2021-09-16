@@ -76,6 +76,6 @@
     }
 
     .round_btn{
-        @apply py-1 px-6 rounded-full mt-3 text-xs xs:text-sm sm:text-base md:text-lg;
+        @apply shadow-xl py-1 px-6 rounded-full mt-3 text-xs xs:text-sm sm:text-base md:text-lg;
     }
 }
