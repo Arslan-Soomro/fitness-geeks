@@ -4,10 +4,6 @@
 
 
 @layer base{
-    @font-face {
-        font-family: 'Dela Gothic One';
-        src: url('Resources/fonts/DelaGothicOne.ttf');
-    }
 
     @font-face {
         font-family: 'Poppins';
@@ -83,7 +79,3 @@
         @apply py-1 px-6 rounded-full mt-3 text-xs xs:text-sm sm:text-base md:text-lg;
     }
 }
-
-/*
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
-*/

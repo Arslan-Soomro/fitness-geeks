@@ -31,7 +31,6 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'dela' : ['Dela Gothic One', 'cursive'],
         'montserrat': ['Montserrat', 'sans-serif'],
         'poppins' : ['Poppins', 'sans-serif']
       },
