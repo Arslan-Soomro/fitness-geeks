@@ -33,6 +33,10 @@
         font-weight: 700;
     }
 
+    html{
+        scroll-behavior: smooth;
+    }
+
     input:focus-within{
         outline: none;
     }
@@ -48,7 +52,7 @@
 
 @layer utilities{
     .feature_card{
-        @apply p-1 xs:p-3 md:p-5 md:max-w-sm;
+        @apply p-1 xs:p-3 md:p-5 md:max-w-sm rounded-xl;
     }
 
     .feature_card img{

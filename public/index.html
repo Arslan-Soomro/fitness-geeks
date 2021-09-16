@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="addon.css">
     <title>Fitness Geeks</title>
 </head>
 
@@ -17,9 +16,21 @@ xl -- 1280px minimum-width.
 2xl-- 1536px minimum-width.
 -->
 
-<body class="bg-cu-black">
+<!-- Add Scroll snapping -->
+
+<body class="bg-cu-black overflow-hidden">
+    
+    <!-- Sidebar -->
+    <div id="sidebar" class="fixed z-50 right-0 lg:right-10 top-1/3 px-4 sm:block">
+        <a href="#hero-sec" class="cursor-pointer border-2 border-cu-white w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6 rounded-full my-7 block"></a>
+        <a href="#about-sec" class="cursor-pointer border-2 border-cu-white w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6 rounded-full my-7 block"></a>
+        <a href="#features-sec" class="cursor-pointer border-2 border-cu-white w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6 rounded-full my-7 block"></a>
+        <a href="#pricing-sec" class="cursor-pointer border-2 border-cu-white w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6 rounded-full my-7 block"></a>
+        <a href="#contact-sec" class="cursor-pointer border-2 border-cu-white w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6 rounded-full my-7 block"></a>
+    </div>
+
     <!-- Hero Section -->
-    <section class="container h-screen bg-cu-black relative p-6">
+    <section id="hero-sec" class="container h-screen bg-cu-black relative p-6">
         <!-- Logo -->
         <h1 class="text-cu-blue font-poppins font-bold text-3xl absolute">FG</h1>
         <!-- The Hero Image-->
@@ -44,7 +55,7 @@ xl -- 1280px minimum-width.
     </section>
 
     <!-- About Section -->
-    <section class="bg-cu-black container h-screen flex items-center justify-center p-4 xs:px-8 xs:py-10">
+    <section id="about-sec" class="bg-cu-black container h-screen flex items-center justify-center p-4 xs:px-8 xs:py-10">
         <div class="border-2 border-cu-green overflow-hidden w-full h-full rounded-xl flex flex-col-reverse justify-end sm:flex-row">
             <div class="p-4 flex justify-center items-center flex-1">
                 <div class="sm:w-9/12">
@@ -60,7 +71,7 @@ xl -- 1280px minimum-width.
     </section>
 
     <!-- Features Section -->
-    <section class="container h-screen p-4 bg-cu-black flex flex-col justify-start">
+    <section id="features-sec" class="container h-screen p-4 bg-cu-black flex flex-col justify-start">
         <h1 class="text-center font-montserrat font-bold text-cu-white text-2xl md:text-3xl">Why Choose Us</h1>
         <div class=" w-full mt-5 y-6 flex-grow grid grid-cols-2 gap-1 xs:gap-3 xs:items-center md:grid-cols-3 md:justify-items-center">
             <div class="feature_card xs:bg-cu-blue">
@@ -100,7 +111,7 @@ xl -- 1280px minimum-width.
     </section>
 
     <!-- Pricing Section -->
-    <section class="container bg-cu-black h-screen p-4 flex flex-col">
+    <section id="pricing-sec" class="container bg-cu-black h-screen p-4 flex flex-col">
         <h1 class="text-center font-montserrat font-bold text-cu-white text-2xl md:text-3xl">Choose A Plan</h1>
         <div class="flex-grow mt-4 grid grid-cols-2 md:grid-cols-3 md:items-center md:gap-x-5">
             <div class="price_card blue_green_grad text-white">
@@ -125,19 +136,19 @@ xl -- 1280px minimum-width.
     </section>
     
     <!-- Contact Section -->
-    <section class="container h-screen bg-cu-black p-4 flex flex-col gap-4">
+    <section id="contact-sec" class="container h-screen bg-cu-black p-4 flex flex-col gap-4">
         <div class="flex-grow flex flex-col gap-4 xs:items-center sm:flex-row sm:justify-around">
             <div class="relative mt-2 xs:w-5/12 sm:h-2/5">
                 <img src="Resources/svgs/curve.svg" class="absolute z-0 h-full w-auto sm:h-auto sm:w-4/6 md:w-3/5 lg:1/2 sm:-top-1/3">
                 <h1 class="text-white font-poppins font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl z-10 relative">Contact<br>Us</h1>
                 <p  class="text-white font-montserrat sm:text-lg md:text-xl">Share with us your feedback, we are always all ears to you</p>
             </div>
-            <div class="bg-cu-green flex-grow py-4 px-8 my-4 flex flex-col gap-y-4 xs:w-9/12 sm:w-5/12 sm:h-5/6 max-w-sm">
+            <div class="bg-cu-green flex-grow py-4 px-8 sm:py-6 my-4 flex flex-col gap-y-4 xs:w-9/12 sm:w-5/12 sm:h-5/6 max-w-sm rounded-lg">
                 <h3 class="font-poppins font-bold text-cu-black text-center text-lg sm:text-xl md:text-2xl">Get in touch</h3>
-                <input class="font-montserrat bg-transparent border-b-2 border-cu-black w-full text-base py-1 px-2 sm:text-lg" placeholder="Name">
-                <input class="font-montserrat bg-transparent border-b-2 border-cu-black w-full text-base py-1 px-2 sm:text-lg" placeholder="Email">
-                <textarea class="font-montserrat bg-transparent border-b-2 border-cu-black w-full text-base flex-grow py-1 sm:text-lg px-2 resize-none" placeholder="Message"></textarea>
-                <button class="font-poppins font-bold border-2 border-cu-black rounded-full px-4 py-1 text-sm sm:text-base md:text-lg self-end">Submit</button>
+                <input class="font-montserrat bg-transparent border-b-2 border-cu-black w-full text-base py-1 px-2 sm:text-lg placeholder-gray-500" placeholder="Name">
+                <input class="font-montserrat bg-transparent border-b-2 border-cu-black w-full text-base py-1 px-2 sm:text-lg placeholder-gray-500" placeholder="Email">
+                <textarea class="font-montserrat bg-transparent border-b-2 border-cu-black w-full text-base flex-grow py-1 sm:text-lg px-2 resize-none placeholder-gray-500" placeholder="Message"></textarea>
+                <button class="font-poppins font-bold border-2 border-cu-black rounded-full px-4 py-1 text-sm sm:text-base self-end">Submit</button>
             </div>
         </div>
         <div class="flex justify-center gap-x-10">
@@ -147,5 +158,6 @@ xl -- 1280px minimum-width.
         </div>
     </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
